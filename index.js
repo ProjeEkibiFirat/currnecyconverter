@@ -22,9 +22,9 @@ function display(data){
 btn.addEventListener("click",() => {
     let currency1 = select[0].value;
     let currency2 = select[1].value;
-    
 
-    let value = input.value;
+
+    let  value = input.value;
 
     if(currency1 != currency2){
         convert(currency1, currency2, value)
