@@ -22,6 +22,7 @@ function display(data){
 btn.addEventListener("click",() => {
     let currency1 = select[0].value;
     let currency2 = select[1].value;
+    
 
     let value = input.value;
 
