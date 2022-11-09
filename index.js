@@ -30,7 +30,7 @@ btn.addEventListener("click",() => {
         convert(currency1, currency2, value)
     }
     else{
-        alert("Choose Diffrent Currencies !!!")
+        alert("Lütfen Farklı Para Birimi Seçiniz !!!")
     }
 });
 
