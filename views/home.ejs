@@ -53,14 +53,18 @@
           <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">Ara</button>
             <div id="myDropdown" class="dropdown-content">
-              <input type="text" placeholder="Ara.." id="myInput" onkeyup="filterFunction()">
-              <a href="#dolar">Dolar</a>
-              <a href="#Euro">Euro</a>
-              <a href="#TürkLirası">Türk Lirası</a>
-              <a href="#JaponYeni">Japon Yeni</a>
-              <a href="#ArjantinPesosu">Arjantin Pesosu</a>
-              <a href="#Frang">Frang</a>
-              <a href="#Won">Won</a>
+              
+              <select  id="itemler">
+                <option value="https://www.google.com/search?q=dolar%2Ftl&sxsrf=ALiCzsa0zleC5yAhII_xh9OFjtFwwQOgtw%3A1672147734821&ei=FvOqY4G8MeWOxc8P9puf8Aw&oq=dolar&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQARgBMgcIIxCwAxAnMgoIABBHENYEELADMgoIABBHENYEELADMgoIABBHENYEELADMgoIABBHENYEELADMgoIABBHENYEELADMgoIABBHENYEELADMgoIABBHENYEELADMgcIABCwAxBDMgcIABCwAxBDMgcIABCwAxBDMgcIABCwAxBDMg0IABDkAhDWBBCwAxgBMg0IABDkAhDWBBCwAxgBMg0IABDkAhDWBBCwAxgBMg8ILhDUAhDIAxCwAxBDGAIyDAguEMgDELADEEMYAjIPCC4Q1AIQyAMQsAMQQxgCSgQIQRgASgQIRhgBUABYAGCWLmgBcAF4AIABAIgBAJIBAJgBAMgBEsABAdoBBggBEAEYCdoBBggCEAEYCA&sclient=gws-wiz-serp">Dolar</option>
+                <option value="https://www.google.com/search?q=t%C3%BCrk+liras%C4%B1&oq=t%C3%BCrk+liras%C4%B1&aqs=chrome..69i57j69i59j0i512l5j69i60.2769j0j9&sourceid=chrome&ie=UTF-8">Türk Lirası</option>
+                <option value="https://www.google.com/search?q=japon+yeni&oq=japon+yeni&aqs=chrome.0.69i59j69i57j69i59l2j69i60l4.2219j0j7&sourceid=chrome&ie=UTF-8">Japon Yeni</option>
+              </select>
+              <script>
+                var menu = document.getElementById("itemler");
+                menu.addEventListener("change", function() {
+                 window.location = this.value;
+                });
+              </script>
             </div>
           </div>
         </div>
